@@ -57,7 +57,7 @@ responder preguntas sobre el estado del sistema, de modo que podamos verificar s
 una función se está comportando de la manera que esperamos"
 ```
 Para mas información, visite:
-https://serenity-bdd.github.io/docs/screenplay/screenplay_fundamentals
+<br>https://serenity-bdd.github.io/docs/screenplay/screenplay_fundamentals
 <br>
 
 <div id='arquitectura_estructura_proyecto'/>
