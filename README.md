@@ -147,23 +147,29 @@ Para mas información, visite:
 <div id='ejecucion'/>
 
 ### 🤺 **Ejecución** [📚](#menu) 
-> **Desde shell / terminal dentro del proyecto**
->>**De todos los test**
->>>./gradlew clean test
+**Desde shell / terminal dentro del proyecto**
+* **De todos los test**
+```
+./gradlew clean test
+```
 
->>**De un test particular**
->>>./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.TestPagoCompraRunner"
+* **De un test particular**
+```
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.TestPagoCompraRunner"
+```
 
->>**con @tags**
->>>./gradlew clean test -Dcucumber.options="--tags @Regresion"
+* **con @tags**
+``` 
+./gradlew clean test -Dcucumber.options="--tags @Regresion"
+```
 
-> **Desde IDE**
->>**De un test particular**
->>>Ubicar y ejecutar lanzador (src/test/java/.../runners/features) 
-> > <br> run: "TestPagoCompraRunner.java"
+**Desde IDE**
+* **De un test particular**
+>>Ubicar y ejecutar lanzador (src/test/java/.../runners/features)
+> ><br> run: "TestPagoCompraRunner.java"
 
->>**De un grupo de test estandar**
->>>Ubicar y ejecutar lanzador estandar (src/test/java/.../runners/general) 
+* **De un grupo de test estandar**
+>>Ubicar y ejecutar lanzador estandar (src/test/java/.../runners/general) 
 > > <br> run: "TestRegresionRunner.java"
  
 <br>
