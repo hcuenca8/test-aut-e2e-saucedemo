@@ -1,0 +1,16 @@
+/**
+ * Listado de tareas adaptadas/preconcebidas para desplegarse en el proceso de produccion
+ */
+
+/**
+ * Adaptacion de la tarea de prueba (test)
+ * todas las consideraciones asociadas al despliegue y ejecucion de las pruebas
+ */
+test {
+    //Comparte el acceso a variables de entorno/sistema
+    systemProperties System.getProperties()
+
+    maxParallelForks = 8
+
+    testLogging.showStandardStreams = true
+}

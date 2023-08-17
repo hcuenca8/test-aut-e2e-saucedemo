@@ -1,0 +1,22 @@
+/**
+ * Listado de tareas preconcebidos para desplegarse en el proceso de postproduccion como ultima etapa del ciclo de vida
+ * del proceso
+ */
+
+/**
+ * Tarea que despliegue rutina de java, interno del proyecto
+ * para organizar/discriminar/recuperar, a partir del reporte generado, las evidencias de cada escenario
+ */
+task generateSpoilers(type: JavaExec) {
+    main = System.getProperty("gradle.props.project.package.base")+'.setups.hooks.postproduction.gradletasks.Spoilers'
+    classpath = sourceSets.test.runtimeClasspath
+}
+
+/**
+ * Tarea que despliega rutina de java, interno del proyecto
+ * para habilitar/facilitar un acceso directo a la visualizacion del reporte (index.html)
+ */
+task generateFilmTicket(type: JavaExec) {
+    main = System.getProperty("gradle.props.project.package.base")+'.setups.hooks.postproduction.gradletasks.Boleto'
+    classpath = sourceSets.test.runtimeClasspath
+}

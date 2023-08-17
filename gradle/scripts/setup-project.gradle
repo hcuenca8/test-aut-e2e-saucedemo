@@ -1,0 +1,8 @@
+/**
+ * Configuraciones del proyecto
+ */
+apply from: "gradle/scripts/variables-project.gradle"
+apply from: "gradle/scripts/integration-local-project.gradle"
+apply from: "gradle/scripts/test-project.gradle"
+apply from: "gradle/scripts/java-project.gradle"
+apply from: "gradle/scripts/lifecycle-project.gradle"

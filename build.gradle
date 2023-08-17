@@ -1,0 +1,56 @@
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        /**
+         * Debe validarse la version del plugin compatible con la version de las dependencias de serenity
+         * de lo contrario puede presentar irregularidades en la construccion del reporte
+         */
+        classpath("net.serenity-bdd:serenity-gradle-plugin:" +
+                "${project.hasProperty('serenityGradleVersion') ? serenityGradleVersion : '+'}")
+    }
+}
+
+//habilita las tareas de gradle dedicadas a la generacion de reporte,
+//incluye plugin net.serenity-bdd.aggregator
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+apply from: "gradle/scripts/setup-project.gradle"
+
+
+/**
+ * Administracion de dependencias
+ * las versiones de cada dependencia estan relacionadas en gradle.properties
+ */
+dependencies {
+
+    implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}",
+
+            "ch.qos.logback:logback-classic:${logbackVersion}"
+
+    testImplementation "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
+            "junit:junit:${junitVersion}",
+            "org.assertj:assertj-core:${assertJVersion}"
+
+    //Otras utilidades
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+}
+
+/**
+ * --------------------------------------------------------------------------------------------------------
+ * ----------------------------------------COMANDOS GRADLE-------------------------------------------------
+ * --------------------------------------------------------------------------------------------------------
+ */
+// ejecucion de pruebas con gradle
+// runner>./gradlew clean test --tests "com.carroya.app.test.automation.e2e.runners.features.induccion.TestInduccionRunner"
+// todos>./gradlew clean test -Denvironment=pipeline
+

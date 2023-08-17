@@ -1,0 +1,16 @@
+/**
+ * Configuraciones relacionadas con java
+ */
+
+
+java {
+    sourceCompatibility = "${javaVersion}"
+    targetCompatibility = "${javaVersion}"
+}
+
+def varEncoding = "${project.hasProperty('encodingProject') ? encodingProject : 'UTF-8'}"
+
+compileJava { options.encoding = "${varEncoding}" }
+compileTestJava { options.encoding = "${varEncoding}" }
+
+

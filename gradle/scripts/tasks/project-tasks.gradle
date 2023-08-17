@@ -1,0 +1,6 @@
+/**
+ * Scripts preparados de tareas de gradle (tasks) personalizadas, creados para las etapas del proceso
+ */
+apply from: "gradle/scripts/tasks/preproduction-tasks.gradle"
+apply from: "gradle/scripts/tasks/production-tasks.gradle"
+apply from: "gradle/scripts/tasks/postproduction-tasks.gradle"

@@ -1,0 +1,11 @@
+/**
+ * Variables, propiedades, parametros, constantes habilitadas para uso del proyecto
+ */
+
+/**
+ * PROPERTIES
+ */
+    //Url paquete base en formato path "/"
+    System.setProperty("build.gradle.project.package.base.url",System.getProperty("gradle.props.project.package.base").replace(".","/"))
+    //Hora de Rodaje
+    System.setProperty("build.gradle.system.currentTimeMillis",String.valueOf(System.currentTimeMillis()))

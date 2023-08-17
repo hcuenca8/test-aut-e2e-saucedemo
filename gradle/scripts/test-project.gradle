@@ -1,0 +1,7 @@
+//estrategia similar a:
+//apply from: "https://gradle.avaldigitallabs.com/resources/serenity/serenity.gradle?v1.1.16"
+
+defaultTasks 'clean','test','aggregate'
+
+//Continuar con el resto de pruebas, despues de cualquier caso fallido
+gradle.startParameter.continueOnFailure = true
