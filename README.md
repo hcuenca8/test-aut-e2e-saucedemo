@@ -31,7 +31,8 @@ refleja los scripts de pruebas automatizacion sobre diferentes funcionalidades/f
 <div id='arquitectura_diagrama_conceptual'/>
 
 ### Diagrama Conceptual [📚](#menu) 
-![Diagrama Conceptual](images/readme/diagrama_conceptual_arquitectura.png)
+
+[comment]: <> (![Diagrama Conceptual]&#40;images/readme/diagrama_conceptual_arquitectura.png&#41;)
 [Generado en draw.io](https://app.diagrams.net/): ../diagrams/readme/diagrama_conceptual_arquitectura.drawio
 
 <br>
