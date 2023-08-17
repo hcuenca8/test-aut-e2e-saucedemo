@@ -9,10 +9,9 @@ refleja los scripts de pruebas automatizacion sobre diferentes funcionalidades/f
 
 ## 📚 Tabla de contenido: 
 1. [Arquitectura](#arquitectura)
-   1. [Conceptos Generales](#conceptos_generales)
-   2. [Diagrama Conceptual](#arquitectura_diagrama_conceptual)
-   3. [Patron de Diseño](#patron_diseno)
-   4. [Estructura de Proyecto](#arquitectura_estructura_proyecto)
+   1. [Diagrama Conceptual](#arquitectura_diagrama_conceptual)
+   2. [Patron de Diseño](#patron_diseno)
+   3. [Estructura de Proyecto](#arquitectura_estructura_proyecto)
 2. [Tecnologias / Herramientas](#tecnologias_herramientas)
 3. [Pre-requisitos](#pre_requisitos) 
 4. [Instalación](#instalacion) 
@@ -25,16 +24,7 @@ refleja los scripts de pruebas automatizacion sobre diferentes funcionalidades/f
 
 <div id='arquitectura'/>
 
-##  📐 Arquitectura [📚](#menu) 
-
-<br>
-
-<div id='conceptos_generales'/>
-
-## Conceptos Generales [📚](#menu) 
-|         Metodologia         |  Patron de diseño  |  Paradigma de programación  |
-|:---------------------------:|:------------------:|:---------------------------:|
-|             BDD             |     Screenplay     |             POO             |
+##  📐 Arquitectura [📚](#menu)
 
 <br>
 
@@ -113,7 +103,7 @@ https://serenity-bdd.github.io/docs/screenplay/screenplay_fundamentals
 | Versionamiento             | Git         | GitHub, GUI/Bash  |
 | Calidad de codigo          | Sonar       | SonarLint         |
 | IDE                        |             | IntelliJ IDEA     |
-| Localizadores              | DOM, xpath, css | dev tools browser |
+| Localizadores              | DOM, xpath css selectors | dev tools browser |
 
 
 <br>
