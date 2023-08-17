@@ -166,12 +166,16 @@ Para mas información, visite:
 **Desde IDE**
 * **De un test particular**
 >Ubicar y ejecutar lanzador (src/test/java/.../runners/features)
-> ><br> run: "TestPagoCompraRunner.java"
+``` 
+TestPagoCompraRunner.java
+```
 
 * **De un grupo de test estandar**
->Ubicar y ejecutar lanzador estandar (src/test/java/.../runners/general) 
-> > <br> run: "TestRegresionRunner.java"
- 
+>Ubicar y ejecutar lanzador estandar (src/test/java/.../runners/general)
+```
+TestRegresionRunner.java
+```
+
 <br>
 
 <div id='informe'/>
