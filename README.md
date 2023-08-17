@@ -44,18 +44,17 @@ refleja los scripts de pruebas automatizacion sobre diferentes funcionalidades/f
 
 ![Diagrama Conceptual](images/readme/screenplay_pattern.png)
 
-```
-"Screenplay es un patrón de diseño de automatización de prueba moderno que 
+
+>"Screenplay es un patrón de diseño de automatización de prueba moderno que 
 pretende facilitar la escritura de código de prueba escalable y mantenible 
 (segun los principios SOLID)
-
-En Screenplay modelamos actores que interactúan con una aplicación de varias maneras 
+> > En Screenplay modelamos actores que interactúan con una aplicación de varias maneras 
 para realizar tareas que les ayuden a lograr sus objetivos. Los actores tienen 
 habilidades , como la capacidad de interactuar con un navegador web o consultar una 
 base de datos, que los ayudan a realizar estas tareas. Los actores también pueden 
 responder preguntas sobre el estado del sistema, de modo que podamos verificar si 
 una función se está comportando de la manera que esperamos"
-```
+
 Para mas información, visite:
 <br>https://serenity-bdd.github.io/docs/screenplay/screenplay_fundamentals
 <br>
