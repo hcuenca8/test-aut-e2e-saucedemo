@@ -171,12 +171,11 @@ Para mas información, visite:
 <div id='informe'/>
 
 ### 📋 **Informe** [📚](#menu)
-```
-Despues de terminar una ejecución de pruebas, puede consultar el informe completo en:
-/target/site/serenity/index.html
 
-abriendo el archivo desde su navegador de preferencia
-```
+>Despues de terminar una ejecución de pruebas, puede consultar el informe completo en:
+/target/site/serenity/index.html 
+> > abriendo el archivo desde su navegador de preferencia
+
 <br>
 
 <div id='ambientes'/>
