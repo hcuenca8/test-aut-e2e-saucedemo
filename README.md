@@ -167,13 +167,13 @@ Para mas información, visite:
 * **De un test particular**
 >Ubicar y ejecutar lanzador (src/test/java/.../runners/features)
 ``` 
-TestPagoCompraRunner.java
+TestPagoCompraRunner
 ```
 
 * **De un grupo de test estandar**
 >Ubicar y ejecutar lanzador estandar (src/test/java/.../runners/general)
 ```
-TestRegresionRunner.java
+TestRegresionRunner
 ```
 
 <br>
