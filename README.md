@@ -103,7 +103,7 @@ Para mas información, visite:
 | Versionamiento             | Git         | GitHub, GUI/Bash  |
 | Calidad de codigo          | Sonar       | SonarLint         |
 | IDE                        |             | IntelliJ IDEA     |
-| Localizadores              | DOM, xpath css selectors | dev tools browser |
+| Localizadores              | DOM, xpath, css selectors | dev tools browser |
 
 
 <br>
