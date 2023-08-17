@@ -155,7 +155,7 @@ Para mas información, visite:
 
 * **De un test particular**
 ```
-./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.TestPagoCompraRunner"
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.pago.TestPagoCompraRunner"
 ```
 
 * **con @tags**
