@@ -172,6 +172,7 @@ Para mas información, visite:
 ```
 ./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.comprador.TestDatosCompradorRunner"
 ```
+Aqui, el runner mas completo, y que solicita el ejercicio:
 ```
 ./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.pago.TestPagoCompraRunner"
 ```
@@ -196,7 +197,6 @@ Para mas información, visite:
 TestTodosRunner
 ```
 * **De un test particular**
->Ubicar y ejecutar lanzador (src/test/java/.../runners/features)
 ```
 TestAccesoRunner
 ```
@@ -209,12 +209,12 @@ TestCarritoCompraRunner
 ```
 TestDatosCompradorRunner
 ```
+Aqui, el runner mas completo, y que solicita el ejercicio:
 ```
 TestPagoCompraRunner
 ```
 
 * **De un grupo de test estandar**
->Ubicar y ejecutar lanzador estandar (src/test/java/.../runners/general)
 ```
 TestRegresionRunner
 ```
