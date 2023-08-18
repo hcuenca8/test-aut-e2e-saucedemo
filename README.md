@@ -259,9 +259,11 @@ Un ejemplo acerca de la visualizacion y navegacion del reporte, se puede observa
 
 <div id='autores'/>
 
-##  ✍️️ Autores [📚](#menu)️ 
-**QC Automation / Analyst**
-  * 👨🏻‍💻 hcuenca8@gmail.com
+##  ✍️️ Autores [📚](#menu)️
+**QC Automation / Analyst Testing**
+<br>**👨🏻‍💻 Hector Fabio Cuenca Madrid** - hcuenca8@gmail.com
+<br>https://www.linkedin.com/in/hector-fabio-cuenca-madrid-3078591b9/
+     
 
 <br>
 
