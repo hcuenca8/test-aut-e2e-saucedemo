@@ -103,7 +103,7 @@ Para mas información, visite:
 | Versionamiento             | Git         | GitHub, GUI/Bash  |
 | Calidad de codigo          | Sonar       | SonarLint         |
 | IDE                        |             | IntelliJ IDEA     |
-| Localizadores              | DOM, xpath, css selectors | dev tools browser |
+| Localizadores              | DOM, xpath, CSS selectors | dev tools browser |
 
 
 <br>
@@ -127,21 +127,20 @@ Para mas información, visite:
 <div id='instalacion'/>
 
 ## 📦 Instalación [📚](#menu)
-
-```
 1. Clonar/descargar proyecto
-    Via HTTPS:
-        git clone https://github.com/hcuenca8/test-aut-e2e-saucedemo.git
-    Via SSH:
-        git clone git@github.com:hcuenca8/test-aut-e2e-saucedemo.git
-
-2. Abrir proyecto en IDE (IntelliJ o de su preferencia)
-
-3. Gestionar dependencias con gradle
-    - Limpiar (clean task)
-    - Recargar (reload all gradle project)
+* Via HTTPS:
 ```
-
+git clone https://github.com/hcuenca8/test-aut-e2e-saucedemo.git
+```
+* Via SSH:
+```
+git clone git@github.com:hcuenca8/test-aut-e2e-saucedemo.git
+```
+2. Abrir proyecto en IDE (IntelliJ o de su preferencia)
+3. Gestionar dependencias con gradle
+   - Limpiar (clean task)
+   - Recargar (reload all gradle project)
+   
 <br>
 
 <div id='ejecucion'/>
