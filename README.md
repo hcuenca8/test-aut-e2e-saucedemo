@@ -240,7 +240,7 @@ Un ejemplo de ejecución de runner desde el IDE, se puede observar a continuaci�
 
 >Despues de terminar una ejecución de pruebas, puede consultar el informe completo en:
 /target/site/serenity/index.html 
-> > abriendo el archivo desde su navegador de preferencia
+> <br><br>Abriendo el archivo desde su navegador de preferencia
 
 <br>
 
