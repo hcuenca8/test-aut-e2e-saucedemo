@@ -206,8 +206,6 @@ TestRegresionRunner
 
 <br>
 
-![video](images/readme/video.mp4)
-
 <!--- comentarios
 Visor readme online
     https://stackedit.io/app#
