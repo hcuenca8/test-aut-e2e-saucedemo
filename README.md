@@ -172,7 +172,7 @@ Para mas información, visite:
 ```
 ./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.comprador.TestDatosCompradorRunner"
 ```
-Aqui, el runner mas completo, y que solicita el ejercicio:
+**Aqui, el runner mas completo, y que solicita el ejercicio:**
 ```
 ./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.pago.TestPagoCompraRunner"
 ```
@@ -209,7 +209,7 @@ TestCarritoCompraRunner
 ```
 TestDatosCompradorRunner
 ```
-Aqui, el runner mas completo, y que solicita el ejercicio:
+**Aqui, el runner mas completo, y que solicita el ejercicio:**
 ```
 TestPagoCompraRunner
 ```
