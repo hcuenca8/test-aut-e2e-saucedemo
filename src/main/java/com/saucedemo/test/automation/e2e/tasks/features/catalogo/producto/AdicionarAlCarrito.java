@@ -45,9 +45,6 @@ public class AdicionarAlCarrito implements Task
                     )
                 ),
 
-                //para alcanzar a ver el efecto
-                Detener.por(2).segundos(),
-
                 Scroll.to(ResumenCarritoCompraUI.LNK_CARRITO),
 
                 Detener.por(Esperas.FINALIZANDO_TAREA.getTiempo()).segundos()

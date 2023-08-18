@@ -229,6 +229,10 @@ TestSmokeRunner
 ```
 
 <br>
+Un ejemplo de ejecución de runner desde el IDE, se puede observar a continuación:
+
+![Ejemplo de ejecución de un runner](images/readme/ej_ejecucion_runner.gif)
+
 
 <div id='informe'/>
 
