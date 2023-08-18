@@ -147,26 +147,69 @@ Para mas información, visite:
 <div id='ejecucion'/>
 
 ### 🤺 **Ejecución** [📚](#menu) 
+> Para ejecutar las pruebas automatizadas, dirijase a la seccion de runners en el proyecto, elija el runner que mas se 
+> ajuste a su necesidad 
+>* src/test/java/.../runners
+>  * /features: encuentre aqui, lanzadores dedicados por funcionalidad 
+>  * /general: encuentre aqui, lanzadores generales, que representan un grupo de test de interes, como por ejemplo: Regresion
+
 **Desde shell / terminal dentro del proyecto**
 * **De todos los test**
 ```
-./gradlew clean test
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.general.TestTodosRunner"
 ```
 
 * **De un test particular**
+```
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.cuenta.acceso.TestAccesoRunner"
+```
+```
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.catalogo.producto.TestCatalogoProductoRunner"
+```
+```
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.carrito.TestCarritoCompraRunner"
+```
+```
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.comprador.TestDatosCompradorRunner"
+```
 ```
 ./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.features.compra.pago.TestPagoCompraRunner"
 ```
 
-* **con @tags**
+* **De un grupo de test**
 ``` 
-./gradlew clean test -Dcucumber.options="--tags @Regresion"
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.general.TestRegresionRunner"
+```
+``` 
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.general.TestHPRunner"
+```
+``` 
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.general.TestAPRunner"
+```
+``` 
+./gradlew clean test --tests "com.saucedemo.test.automation.e2e.runners.general.TestSmokeRunner"
 ```
 
 **Desde IDE**
+* **De todos los test**
+```
+TestTodosRunner
+```
 * **De un test particular**
 >Ubicar y ejecutar lanzador (src/test/java/.../runners/features)
-``` 
+```
+TestAccesoRunner
+```
+```
+TestCatalogoProductoRunner
+```
+```
+TestCarritoCompraRunner
+```
+```
+TestDatosCompradorRunner
+```
+```
 TestPagoCompraRunner
 ```
 
@@ -174,6 +217,15 @@ TestPagoCompraRunner
 >Ubicar y ejecutar lanzador estandar (src/test/java/.../runners/general)
 ```
 TestRegresionRunner
+```
+```
+TestAPRunner
+```
+```
+TestHPRunner
+```
+```
+TestSmokeRunner
 ```
 
 <br>
