@@ -21,13 +21,7 @@ test.dependsOn(clearReports)
 test.finalizedBy(aggregate)
 
 /**
- * generateSpoilers despues de aggregate
- * genera/habilita un resumen compacto (.gif), de cada escenario ejecutado /target/site/serenity/spoilers
- */
-aggregate.finalizedBy(generateSpoilers)
-
-/**
- * generateFilmTicket despues de generateSpoilers
+ * generateFilmTicket despues de aggregate
  * genera/hablita un acceso directo a la visualizacion del reporte
  */
-generateSpoilers.finalizedBy(generateFilmTicket)
+aggregate.finalizedBy(generateFilmTicket)
