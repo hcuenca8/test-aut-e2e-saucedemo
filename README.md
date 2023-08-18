@@ -149,9 +149,9 @@ Para mas información, visite:
 ### 🤺 **Ejecución** [📚](#menu) 
 > Para ejecutar las pruebas automatizadas, dirijase a la seccion de runners en el proyecto, elija el runner que mas se 
 > ajuste a su necesidad 
->* src/test/java/.../runners
->  * /features: encuentre aqui, lanzadores dedicados por funcionalidad 
->  * /general: encuentre aqui, lanzadores generales, que representan un grupo de test de interes, como por ejemplo: Regresion
+* src/test/java/.../runners
+  * /features: encuentre aqui, lanzadores dedicados por funcionalidad 
+  * /general: encuentre aqui, lanzadores generales, que representan un grupo de test de interes, como por ejemplo: Regresion
 
 **Desde shell / terminal dentro del proyecto**
 * **De todos los test**
