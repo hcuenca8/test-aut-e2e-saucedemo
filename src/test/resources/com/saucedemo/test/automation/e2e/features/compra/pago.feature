@@ -33,8 +33,3 @@ Característica: Pago de compra
       # R/ ¿Que se espera? --> en tiempo futuro, validación / verificación
       # R/ ¿Cual es la consecuencia de sus actos? --> en tiempo futuro, lo que sucederá
     Entonces debería mostrarse en la web: "Thank you for your order!"
-
-
-
-
-

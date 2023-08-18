@@ -244,6 +244,10 @@ Un ejemplo de ejecución de runner desde el IDE, se puede observar a continuaci�
 
 <br>
 
+Un ejemplo acerca de la visualizacion y navegacion del reporte, se puede observar a continuación:
+
+![Informe de ejecucion](images/readme/informe_ejecucion.gif)
+
 <div id='ambientes'/>
 
 ## 📬 Ambientes [📚](#menu) 
