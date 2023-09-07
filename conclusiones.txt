@@ -1,0 +1,119 @@
+CONCLUSIONES DEL ESCENARIO DE PRUEBA AUTOMATIZADO:
+
+* Una vez ejecutada la prueba automatizada
+* y apreciando a traves de cualquier navegador, el informe correspondiente en
+    /target/site/serenity/index.html
+
+* Se ejecuta un flujo E2E correspondiente al pago de una compra
+    - de 2 productos previamente selecionados del catalogo de Swag Labs
+    - bajo una cuenta de usuario autenticada
+
+* Dentro del resumen tecnico de La prueba
+    - se ejecuta y analiza unicamente el escenario solicitado,
+        pero se dejan disponibles los demas escenarios de los flujos
+        y se etiquetan aquellos que a juicio experto aplican como parte de un set de regresion
+    - tarda 28 seg en completar la prueba automatizada, desde su inicio hasta su complecion (informe)
+        dentro del rango de 10 a 30 seg
+    - el caso pasa segun las asserciones y/o los comportamientos esperados
+    - Se pueden observar las evidencias a mayor detalle (paso a paso)
+        por enunciado gherkin y por tarea/accion
+        en la seccion de resultados de la prueba (Test Results)
+
+* Pendientes (To Do):
+    - La eficiencia de la prueba puede aumentar, disminuyendo tiempos de espera explicitos
+    - Es conveniente ampliar el conjunto de datos de prueba
+        - replanteando el script para manejar data-driven-test
+        - una alternativa puede ser combinando la zona de ejemplos de gherkin con data organizada en .json, .csv, .xlsx o BDs mas formales
+    - Es conveniniente evaluar la prueba en diferentes navegadores y resoluciones
+        - una alternativa es incorporar una herramienta de cross-browsing testing como LambdaTest/BrowserStack,
+
+
+CONCLUSIONES DE LA PRUEBA TECNICA:
+
+El ejercicio planteaba una automatizacion E2E a traves de 2 tecnologias Selenium o Cypress
+
+* No hay tecnologia/herramienta mejor que otra, lo que se debe buscar es la que mejor se ADAPTE al contexto
+ - asi como las pruebas dependen del contexto, la seleccion de las tecnologias/herramientas tambien
+
+
+* sin embargo se listan algunas caracteristicas importantes a tener en cuenta entre estas 2 plataformas
+Cypress
+    - Es una tecnologia muy completa, todas las necesidades en una sola plataforma
+    - Su acople frente a la aplicacion sujeta a pruebas es mas transparente debido a que utiliza NodeJS
+        - que por debajo realiza incrustaciones de codigo javaScript equivalente dentro de la aplicacion sujeta a pruebas,
+            - logrando una mejor integracion y comunicacion mas limpia
+                - Mejorando la eficiencia de la prueba automatizada, sus tiempos de respuesta y velocidad
+    - Unicamente tolera como lenguaje de programacion JavaScript, que esta dentro de los 3 lenguajes mas usados en el mercado
+        - Python, JavaScript, Java
+        - JavaScript es un lenguaje no tipado, versatil, lo cual lo hace menos rigido y estructurado que java por ejemplo
+    - Esta tecnologia se concentra en pruebas E2E, aunque tiene soporte integrado para consumo de servicios y por ende API Testing
+        - en lo que respecta a E2E,
+            - Soporta navegadores convencionales y de amplio uso como Chrome, FireFox o Edge,
+                - Pero no soporta Safari, ideal para los usuarios con macOS
+            - No tiene soporte para Mobile, asumiriamos la cobertura netamente bajo el consumo web
+                - Pero ante el desarrollo de una alternativa especifica de app mobile webView / Nativa (Android/iOS)
+                    - Tendriamos que explorar otra tecnologia que complemente la estrategia de automatizacion
+    - Es una tecnologia de uso con una capa gratuita,
+        - pero tambien tiene para desbloquear capas pagas, con otros atributos importantes para la estrategia de automatizacion
+    - Tiene amplio soporte organizado de documentacion y comunidades de apoyo
+
+Selenium
+
+Aunque el contraste habitualmente se hace Selenium VS Cypress,
+es un contraste injusto para Selenium, puesto que Cypress no solo se muestra como tecnologia,
+sino que viene con la incorporacion interna de un FrameWork que alivia/facilita su uso, desde los constructos (DSL)
+hasta la ejeuccion/despligue (Runners).
+
+Entonces Cypress (Tecnologia + FrameWork, todo bajo el mismo nombre), y Selenium (solo Tecnologia)
+Es por ello que a modo personal, mi contraste lo haria con Serenity-BDD, que es un FrameWork para Selenium
+y que hace uso de todo lo que brinda la tecnologia como tal + el FrameWork para aliviar su uso
+
+Con base a esto Serenity-BDD
+
+    - Serenity usa Selenium y su tecnologia con todo lo basico y necesario para la automatizacion E2E,
+    - Tambien presenta soporte e integracion con su homonimo Appium, para todo lo requerido para el contexto mobile
+    - Al usar Selenium/Appium son tecnologias cuyo foco es tratar de abarcar mayor cobertura ante los diversos tipos de aplicaciones, dispositivos y demas,
+    - Es un FrameWork que esta adaptado/alineado al patron de diseño Screenplay
+        - Que aunque es mas extenso que usar POM, a largo plazo da mejor escalabilidad, mantenibilidad y bajo acoplamiento
+            - debido a toda la segregacion de responsabilidades propuesta por los principios SOLID
+        - Sin embargo no es camisa de fuerza utilizar un patron de diseño en especifico, tambien se puede emplear POM sin problema
+    - Es de codigo abierto por lo cual todo es accesible y gratuito
+    - Tiene amplio soporte organizado de documentacion y comunidades muy activas de apoyo
+        - Esta en constante evolucion, constantemente lanzan versiones con nuevas caracteristicas, mejoras o resolucion de defectos
+    - El frameWork como tal, ofrece 2 lenguajes de programacion: Java y JavaScript
+        - Pero las tecnologias de uso como Selenium, tiene soporte para mas lenguajes (Python, Ruby, Java, Perl, C# y PHP)
+    - Al usar Selenium, usa su estrategia de integracion a traves de drivers de los navegadores como ChromeDriver, GekoDriver (firefox)
+        - Esto hace que su eficiencia baje, puesto que es un punto adicional de comunicacion,
+            - y esta sujeto al rendimiento propio del navegador en el dispositivo donde se este corriendo
+    - Serenity ofrece una complecion de la prueba, con un informe muy estructurado y organizado para el uso de metricas y demas
+        - consolida evidencia, por cada paso
+        - muestra graficas de consumo y cobertura
+        - Es un informe html de facil portabilidad
+    - Aliviana toda la complejidad de Selenium/Appium
+        - a traves de archivos de configuracion (por ejemplo para la segmentacion de ambientes o contextos)
+        - codigo con constructos DSL mas apropiados y digeribles
+    - Para temas de API Testing, Serenity, tiene integracion con Rest-Asurred para todo lo que respecta a estos tipos de prueba
+
+
+SEGUN EL CONTEXTO:
+
+Estos son algunos de los argumentos por los cuales opte por realizar el ejercicio con Serenity-BDD
+
+Se trata de un e-commerce, de venta de articulos en linea,
+- en este contexto tendremos diversos tipos de usuario utilizando diversos dispositivos que interactuaran con la aplicacion
+    - puede haber un gran porcentaje de usuarios MacOS, que habitualmente utilizaran Safari
+        - SELENIUM-SERENITY ++
+- El e-commerce muy seguramente a futuro necesitara apps mobile para lograr competir con otros negocios de e-commerce en el mercado
+    - de esta forma llegar mas personalizado y ajustado a los usuarios
+        - APPIUM-SERENITY ++
+- Un e-commerce sumara features constantes, para habilitar nuevas funciones al usuario final, estara en constante cambio para posicionarse  y competir en e mercado
+    - Asi mismo la estrategia de automatizacion estara en constante mantenimiento, es importante pensar en el largo plazo, el uso de Screenplay puede ser relevante
+        - SCREENPLAY-SERENITY ++
+- En cuanto a la eficiencia de la prueba, el diferencial de tiempos de ejecucion/rendimiento puede ser aceptado
+- Ambos soportan estrategias de pruebas para el nivel de integracion con propuestas de API testing
+- En cuanto a los costos y presupuesto de la estrategia de automatizacion
+    - Serenity es de codigo abierto, con todo su portafolio accesible y gratuito
+        - SELENIUM/APPIUM-SERENITY ++
+- Aunque elegi java como lenguaje de programacion para la estrategia de automatizacion, esto depende mas de las habilidades que el equipo de testing tenga a favor
+    - Serenity ofrece al menos un lenguaje adicional a JavaScript
+        - JAVA/JAVASCRIPT-SERENITY ++
